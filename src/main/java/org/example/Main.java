@@ -5,8 +5,18 @@ import java.util.List;
 
 public class Main {
     static void main() {
-        ArrayList<Producto> productos = (ArrayList<Producto>) cargarProductos();
+        List<Producto> productos = cargarProductos();
+        Ejercicios ejercicios = new Ejercicios();
+
+
+        System.out.println(ejercicios.ej1());
+        System.out.println(ejercicios.ej3());
+        System.out.println(ejercicios.ej5());
+        System.out.println(ejercicios.ej7());
+        System.out.println(ejercicios.ej9());
     }
+
+
 
     public static List<Producto> cargarProductos() {
         return List.of(
@@ -37,4 +47,6 @@ public class Main {
                 new Producto("Taza", 15, "Hogar", 40)
         );
     }
+
+
 }
